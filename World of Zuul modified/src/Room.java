@@ -89,13 +89,12 @@ public class Room
     }
 
     public String getItemString(){
-       String itemReturnString = "Items:";
-            for(Item items : itemsInRoom) {
-                System.out.print(items + " ");
-                items.toString();
+       String itemReturnString = "Items: ";
+            for(Item item : itemsInRoom) {
+                itemReturnString += item.getName() + " , ";
+
             }
             return itemReturnString;
-
     }
 
 }
